@@ -5,7 +5,7 @@
     <title>Барбершоп "Бородинский"</title>
   </head>
   <body>
-    <header class="maim-header">
+    <header class="main-header">
       <div class="container">
         <a class="main-logo" href="#">
           <img src="http://placehold.it/100x30" alt="Barbershop">        	
@@ -38,26 +38,24 @@
       <h1 class="page-header">
       Средства для ухода        
       </h1>
-      <div class="bread-crumbs">
+      <nav class="bread-crumbs">
         <ul>
           <li>
             <a href="#">
-              <span>Главная</span>
+              Главная
             </a>
           </li>
           <li>
             <a href="#">
-              <span>Магазин</span>
+              Магазин
             </a>
           </li>
-          <li>
-            <a href="#">
-              <span>Средства для ухода</span>
-            </a>
+          <li>            
+            Средства для ухода            
           </li>
         </ul>        
-      </div>
-      <div class="filter">
+      </nav>
+      <form class="filter">
         <div class="producers">
           <h2>Производители:</h2> <!-- Скорее всего это <b> -->
           <ul class="producers-list">
@@ -123,7 +121,7 @@
           </ul>
           <button type="submit">Показать</button>          
         </div>        
-      </div>
+      </form>
       <div class="main-products">
       	<article class="product-card">
       	  <div class="product-image">
@@ -132,7 +130,7 @@
       	    </a>
       	  </div>
       	  <div class="product-details">
-      	    <p>Набор для путешествий <br>"BAXTER OF CALIFORNIA"</p>
+      	    <a href="#">Набор для путешествий <br>"BAXTER OF CALIFORNIA"</a>
       	    <div class="button-group">
       	      <p>2900 РУБ.</p>
       	      <a href="#">Купить</a>
@@ -146,7 +144,7 @@
       	    </a>
       	  </div>
       	  <div class="product-details">
-      	    <p>Увлажняющий кондиционер <br>"BAXTER OF CALIFORNIA"</p>
+      	    <a href="#">Увлажняющий кондиционер <br>"BAXTER OF CALIFORNIA"</a>
       	    <div class="button-group">
       	      <p>750 РУБ.</p>
       	      <a href="#">Купить</a>      	    	
@@ -160,7 +158,7 @@
       	    </a>
       	  </div>
       	  <div class="product-details">
-      	    <p>Гель для волос <br>"SUAVECITO"</p>
+      	    <a href="#">Гель для волос <br>"SUAVECITO"</a>
       	    <div class="button-group">
       	      <p>290 РУБ.</p>
       	      <a href="#">Купить</a>      	    	
@@ -174,7 +172,7 @@
       	    </a>
       	  </div>
       	  <div class="product-details">
-      	    <p>Глина для укладки волос <br>"AMERICAN CREW"</p>
+      	    <a href="#">Глина для укладки волос <br>"AMERICAN CREW"</a>
       	    <div class="button-group">
       	      <p>500 РУБ.</p>
       	      <a href="#">Купить</a>      	    	
@@ -188,7 +186,7 @@
       	    </a>
       	  </div>
       	  <div class="product-details">
-      	    <p>Гель для волос <br>"AMERICAN CREW"</p>
+      	    <a href="#">Гель для волос <br>"AMERICAN CREW"</a>
       	    <div class="button-group">
       	      <p>300 РУБ.</p>
       	      <a href="#">Купить</a>      	    	
@@ -202,7 +200,7 @@
       	    </a>
       	  </div>
       	  <div class="product-details">
-      	    <p>Набор для бритья <br>"BAXTER OF CALIFORNIA"</p>
+      	    <a href="#">Набор для бритья <br>"BAXTER OF CALIFORNIA"</a>
       	    <div class="button-group">
       	      <p>3900 РУБ.</p>
       	      <a href="#">Купить</a>      	    	
@@ -210,13 +208,13 @@
       	  </div>     		      	
         </article>
       </div>      
-      <div class="row-pagination">
+      <div class="paginator">
         <ul>
           <li>
           	<a href="#">1</a>
           </li>
           <li>
-          	<span>2</span>
+          	<a href="#" class="active">2</a>
           </li>
           <li>
           	<a href="#">3</a>
