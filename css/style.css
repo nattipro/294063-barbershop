@@ -1,6 +1,4 @@
-body { 
-  min-width: 1200px;
-  min-height: 1173px;
+body { 	
   margin: 0;
   padding: 0;
 }
@@ -44,21 +42,18 @@ h1 {
 
 .filter {
   float: left;
-  width: 222px;
-  height: 680px;  
+  width: 222px;   
 }
 
 .main-products {
   float: right;
-  width: 710px;
-  height: 592px;  
+  width: 710px;    
   margin-bottom: 45px;  
 }
 
 .product-card {
   float: left;
-  width: 220px;
-  height: 286px;  
+  width: 220px;    
   margin-right: 20px;
   font-size: 14px;
   line-height: 18px;
@@ -73,9 +68,8 @@ h1 {
 }
 
 .paginator {
-  float: left;
-  width: 193px;
-  height: 43px;
+  float: right;
+  width: 700px;  
   margin-bottom: 49px;
   margin-left: 10px;
   padding: 0 10px;  
@@ -107,15 +101,13 @@ h1 {
 
 .image-galery{
   float: left;
-  width: 470px;
-  height: 668px;
+  width: 470px;  
   margin-bottom: 49px;
 }
 
 .product-description {
   float: right;
-  width: 400px;
-  height: 669px;
+  width: 400px;  
   padding-left: 10px;
 }
 
@@ -125,7 +117,7 @@ h1 {
 /*======================================
  Системное оформление - не изменять
 =======================================*/
-/*
+
 body {
   padding: 3px;
 }
