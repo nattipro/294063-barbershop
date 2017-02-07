@@ -43,7 +43,50 @@ h1 {
 
 .filter {
   float: left;
-  width: 222px;   
+  width: 220px;   
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  margin: 10px 0;
+  line-height: 20px; 
+  padding-left: 45px;
+  position: relative;
+  left: 0;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  background-color: #f9f6f3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  display: block;  
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  background-position: -5px -31px; 
 }
 
 .main-products {
@@ -105,7 +148,43 @@ h1 {
   width: 180px;
 }
 
+.social-btn{
+  display: inline-block;
+  vertical-align: top;
+  width: 43px;
+  height: 43px;
+  font-size: 0;
+  background-color: #000000;
+  position: relative;
+}
 
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.social-btn-vk::before {
+  width: 25px;
+  height: 16px;
+  background-position: -5px -116px;
+}
+
+.social-btn-fb::before {
+  width: 12px;
+  height: 22px;
+  background-position: -5px -53px;
+}
+
+.social-btn-inst::before {
+  width: 21px;
+  height: 21px;
+  background-position: -5px -85px;
+}
 /*Орормление "catalog-item" страници. */
 
 .image-galery{
@@ -120,6 +199,14 @@ h1 {
   padding-left: 10px;
 }
 
+/*Спрайт*/
+
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
@@ -129,25 +216,31 @@ h1 {
 .sprite--icon-login {
     width: 18px;
     height: 16px;
-    background-position: -10px -10px;
+    background-position: -5px -5px;
+}
+
+.sprite-ico-checkbox {
+    width: 12px;
+    height: 12px;
+    background-position: -5px -31px;
 }
 
 .sprite-social-fb {
     width: 12px;
     height: 22px;
-    background-position: -10px -46px;
+    background-position: -5px -53px;
 }
 
 .sprite-social-inst {
     width: 21px;
     height: 21px;
-    background-position: -10px -88px;
+    background-position: -5px -85px;
 }
 
 .sprite-social-vk {
     width: 25px;
     height: 16px;
-    background-position: -10px -129px;
+    background-position: -5px -116px;
 }
 
 
@@ -157,6 +250,8 @@ h1 {
 /*======================================
  Системное оформление - не изменять
 =======================================*/
+
+/*
 
 body {
   padding: 3px;
