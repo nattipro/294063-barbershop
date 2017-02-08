@@ -157,6 +157,9 @@ input[type="checkbox"]:checked + label::after {
   background-color: #000000;
   position: relative;
 }
+.social-btn::hover {
+  background-color: rgba(255, 255, 255);
+}
 
 .social-btn::before {
   content: "";
@@ -168,10 +171,17 @@ input[type="checkbox"]:checked + label::after {
   background-repeat: no-repeat;
 }
 
+.social-btn-vk::hover {
+  background-color: rgb(0, 0, 0);
+}
 .social-btn-vk::before {
   width: 25px;
   height: 16px;
   background-position: -5px -116px;
+}
+
+.social-btn-fb::hover {
+  background-color: rgb(0, 0, 0);
 }
 
 .social-btn-fb::before {
@@ -180,6 +190,9 @@ input[type="checkbox"]:checked + label::after {
   background-position: -5px -53px;
 }
 
+.social-btn-inst::hover {
+  background-color: rgb(0, 0, 0);
+}
 .social-btn-inst::before {
   width: 21px;
   height: 21px;
