@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп "Бородинский"</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -95,24 +96,18 @@
         </fieldset>        
         <fieldset class="product-groups">
         <legend>Группы товаров:</legend> 
-          <ul>
-            <li>
-              <label>
-                <input type="radio" name="product-groups" value="shaving-accessories">
-                <span>Бритвенные принадлежности</span>
-              </label>
+          <ul class="product-groups-list">
+            <li>              
+              <input type="radio" name="product-groups" value="shaving-accessories" id="rd1">
+              <label for="rd1"><span>Бритвенные принадлежности</span></label>       
             </li>
-            <li>
-              <label>
-              	<input type="radio" name="product-groups" value="for-care">
-              	<span>Средства для ухода</span>
-              </label>
+            <li>              
+              <input type="radio" name="product-groups" value="for-care" id="rd2">
+              <label for="rd2"><span>Средства для ухода</span></label>              
             </li>
-            <li>
-              <label>
-              	<input type="radio" name="product-groups" value="accessories">
-              	<span>Аксессуары</span>
-              </label>
+            <li>              
+              <input type="radio" name="product-groups" value="accessories" id="rd3">
+              <label for="rd3"><span>Аксессуары</span></label>              
             </li>        	
           </ul>
           <button type="submit">Показать</button>          

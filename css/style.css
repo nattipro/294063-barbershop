@@ -4,7 +4,8 @@ body {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 14px;
   line-height: 18px;
-
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .clearfix::after {
@@ -25,6 +26,25 @@ body {
   width: 780px; 
 }
 
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-navigation li {
+  display: inline-block;  
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.main-navigation a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .user-block {
   float: right;
   width: 140px;
@@ -32,6 +52,10 @@ body {
 
 .main-header {
   margin-bottom: 59px;
+
+  color: #ffffff;
+
+  background-color: #000000;
 }
 
 h1 {
@@ -46,13 +70,17 @@ h1 {
 
 .filter {
   float: left;
-  width: 220px;   
+  width: 220px;
+}
+.producers {
+  padding-left: 0;  
 }
 
-ul {
+.producers-list {
   list-style: none;
   padding: 0;
 }
+
 
 input[type="checkbox"] {
   display: none;
@@ -60,8 +88,8 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label {
   display: block;
-  margin: 10px 0;
-  line-height: 20px; 
+  margin: 17px 0;
+  line-height: 18px; 
   padding-left: 45px;
   position: relative;
   left: 0;
@@ -90,6 +118,52 @@ input[type="checkbox"]:checked + label::after {
   width: 12px;
   height: 12px;
   background-position: -5px -31px; 
+}
+
+.product-groups {
+  padding-left: 0;
+}
+
+.product-groups-list {
+  list-style: none;
+  padding: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: block;
+  margin: 10px 0;
+  line-height: 18px;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000101;
+  background-color: #f9f6f3;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 6px;  
 }
 
 .main-products {
@@ -162,7 +236,7 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .social-btn:hover {
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .social-btn::before {
