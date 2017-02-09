@@ -13,8 +13,7 @@
         <a class="main-logo" href="#">
           <img src="img/logo.png" width="111" height="24" alt="Barbershop">         
         </a>
-        <nav class="main-navigation">
-                
+        <nav class="main-navigation">                
           <ul>
             <li>
               <a href="#">Информация</a>
@@ -55,7 +54,7 @@
             </a>
           </li>
           <li>            
-            <a>Средства для ухода</a>            
+            <a class="active">Средства для ухода</a>            
           </li>
         </ul>        
       </nav>
@@ -111,9 +110,10 @@
               <label for="rd3"><span>Аксессуары</span></label>              
             </li>        	
           </ul>
-          <button type="submit">Показать</button>          
+          <button class="btn" type="submit">Показать</button>          
         </fieldset>        
       </form>
+      <div class="right-column">
       <div class="main-products clearfix">
       	<article class="product-card">
       	  <div class="product-image">
@@ -128,7 +128,7 @@
                 <span class="product-name">"BAXTER OF CALIFORNIA"</span>
               </a>
             </h2>  
-      	    <div class="button-group">
+      	    <div class="button-group clearfix">
       	      <span>2900 РУБ.</span>
       	      <a href="#">Купить</a>
       	    </div>
@@ -147,7 +147,7 @@
                 <span class="product-name">"BAXTER OF CALIFORNIA"</span>
               </a>
             </h2>
-      	    <div class="button-group">
+      	    <div class="button-group clearfix">
       	      <span>750 РУБ.</span>
       	      <a href="#">Купить</a>      	    	
       	    </div>
@@ -166,7 +166,7 @@
                 <span class="product-name">"SUAVECITO"</span>
               </a>
             </h2>
-      	    <div class="button-group">
+      	    <div class="button-group clearfix">
       	      <span>290 РУБ.</span>
       	      <a href="#">Купить</a>      	    	
       	    </div>
@@ -185,7 +185,7 @@
                 <span class="product-name">"AMERICAN CREW"</span>
               </a>
             </h2>
-      	    <div class="button-group">
+      	    <div class="button-group clearfix">
       	      <span>500 РУБ.</span>
       	      <a href="#">Купить</a>      	    	
       	    </div>
@@ -204,7 +204,7 @@
                 <span class="product-name">"AMERICAN CREW"</span>
               </a>
             </h2>
-      	    <div class="button-group">
+      	    <div class="button-group clearfix">
       	      <span>300 РУБ.</span>
       	      <a href="#">Купить</a>      	    	
       	    </div>
@@ -223,7 +223,7 @@
                 <span class="product-name">"BAXTER OF CALIFORNIA"</span>
               </a>
             </h2>
-      	    <div class="button-group">
+      	    <div class="button-group clearfix">
       	      <span>3900 РУБ.</span>
       	      <a href="#">Купить</a>      	    	
       	    </div>
@@ -236,26 +236,27 @@
         <a class="num" href="#">3</a>
         <a class="num" href="#">4</a>                 
       </div>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="container clearfix">
-        <div class="footer-contacts">
-        Барбершоп «Бородинский»<br>
+        <section class="footer-contacts">
+          Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
           Телефон: +7 (812) 666-02-66
-        </div>
-        <div class="footer-social">
+        </section>
+        <section class="footer-social">
           <p>Давайте дружить!</p>
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>       	
-        </div>
-        <div class="footer-copyright">
-        <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>        	
-        </div>
-      </div>  	
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
