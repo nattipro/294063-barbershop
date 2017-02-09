@@ -29,8 +29,7 @@ body {
 
 .main-logo {
   float: left;
-  width: 140px;
-  
+  width: 140px;  
 }
 
 .main-logo img {
@@ -123,8 +122,8 @@ h1 {
 
 .bread-crumbs ul {
   padding: 0;
-  list-style: none;  
   display: flex; 
+  list-style: none;  
   justify-content: flex-start;  
 }
 
@@ -155,6 +154,7 @@ h1 {
 
 .bread-crumbs a {
   color: #000000;
+  text-decoration: none;
 }
 
 .bread-crumbs a:active {
@@ -510,7 +510,44 @@ input[type="radio"] + label:hover {
   float: right;
   width: 400px;  
   padding-left: 10px;
+
+  background-color: red;
 }
+
+.product-info {
+
+}
+
+.product-info ul { 
+  float: left;
+  width: 390px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  list-style: none;
+
+  background-color: white;
+
+}
+.p-stock { 
+  float: left;
+  width: 90px; 
+ 
+  background-color: yellow;
+}
+
+.p-model {   
+  float: right;
+  width: 140px; 
+
+  background-color: green;
+}
+
+
+
+
+
 
 /*Спрайт*/
 
