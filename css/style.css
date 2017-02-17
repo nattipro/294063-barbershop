@@ -3,7 +3,7 @@ body {
   padding: 0;  
   font-size: 14px;
   line-height: 18px;
-  font-family: "PT Sans Narrow", sans-serif;  
+  font-family: "PT Sans Narrow", "Arial", sans-serif;  
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 .main-header {
-  margin-bottom: 59px;
+  margin-bottom: 54px;
   color: #ffffff;
   background-color: #000000;
 }
@@ -40,7 +40,8 @@ body {
 .main-navigation { 
   float: left;
   width: 620px;   
-  margin-right: 20px; 
+  margin-right: 25px; 
+  margin-left: 10px;
 }
 
 .main-navigation ul {
@@ -60,8 +61,8 @@ body {
 .main-navigation a {
   display: block;
   padding: 25px 20px;
-  color: #ffffff;
   text-decoration: none;
+  color: #ffffff;  
 }
 
 .main-navigation a:hover {
@@ -76,7 +77,7 @@ body {
 .login {
   position: relative;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 40px;
   padding: 25px 20px;
   padding-left: 50px;
   font-size: 16px;
@@ -113,10 +114,11 @@ h1 {
   font-size: 30px;  
   font-weight: bold;    
   line-height: 42px;
+  margin: 0;
 }
 
 .bread-crumbs {
-   margin-bottom: 59px;
+   margin-bottom: 39px;
    display: flex; 
 }
 
@@ -166,6 +168,11 @@ h1 {
   width: 220px;  
 }
 
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
 .producers {
   padding-left: 0; 
   border: none; 
@@ -183,7 +190,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label {
   display: block;
-  margin: 17px 0;
+  margin: 20px 0;
   line-height: 18px; 
   padding-left: 45px;
   position: relative;
@@ -220,6 +227,7 @@ input[type="checkbox"] + label:hover {
 }
 
 .product-groups {
+  margin-top: 20px;
   padding-left: 0;
   border: none;
 }
@@ -227,6 +235,7 @@ input[type="checkbox"] + label:hover {
 .product-groups-list {
   list-style: none;
   padding: 0;
+  margin-bottom: 50px;
 }
 
 input[type="radio"] {
@@ -235,7 +244,7 @@ input[type="radio"] {
 
 input[type="radio"] + label {
   display: block;
-  margin: 10px 0;
+  margin: 20px 0;
   line-height: 18px;
   padding-left: 45px;
   position: relative;
@@ -289,7 +298,7 @@ input[type="radio"] + label:hover {
 
 .btn:hover,
 .btn:active {
-  background-color: #663d15;
+  background-color: #e74246;
 }
 
 .right-column {
@@ -300,7 +309,7 @@ input[type="radio"] + label:hover {
 .main-products {
   float: right;
   width: 710px;    
-  margin-bottom: 45px; 
+  margin-bottom: 35px; 
 }
 
 .product-card {
@@ -310,6 +319,7 @@ input[type="radio"] + label:hover {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;  
+  box-shadow: 0 0  15px rgba(0,1,1,0.2);
 }
 
 .product-image {
@@ -321,6 +331,7 @@ input[type="radio"] + label:hover {
 .product-details h2 {
   margin: 0;
   margin-left: 16px;
+  text-transform: none;
 }
 
 .product-details a {  
@@ -331,7 +342,7 @@ input[type="radio"] + label:hover {
 }
 
 .button-group {  
-  padding: 16px;    
+  padding: 10px 15px;    
 }
 
 .button-group span {
@@ -590,6 +601,8 @@ input[type="radio"] + label:hover {
   background-color: #000000;
   transform: rotate(45deg);
 }
+
+
 
 
 
